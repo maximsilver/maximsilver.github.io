@@ -1,0 +1,22 @@
+{% include head.html %}
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <h1><a href="index.html">{{ site.title }}</a></h1>
+        </div>
+      </div>
+    {% include menu_bar.html %}
+    </div>
+    <div id="site_content">
+      <div class="sidebar">
+        {% include sidebar.html %}
+        {% include useful_links.html %}
+      </div>
+      <div id="content">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+{% include foot.html %}
